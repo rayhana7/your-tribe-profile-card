@@ -7,7 +7,7 @@
 /* Dit verwijst naar het <html> element. De <html> krijgt een lichtgele achtergrond. */
 
 html {
-  background:lightyellow;
+  background:rgba(50, 32, 16, 0.459);
 }
 
 /* BODY */
@@ -22,7 +22,7 @@ body {
   height: 100vh;
   
   font-family: open sans;
-  color: #10214e; /* de tekst kleur wordt in hex kleuren bepaald. */
+  color: #412913bc; /* de tekst kleur wordt in hex kleuren bepaald. */
 }
 
 /* ARTICLE */
@@ -43,8 +43,8 @@ article {
   min-width: 20em;
   
   border-radius: 1rem;
-  background: rgb(0 239 255);
-  background: linear-gradient(0deg, rgb(0 239 255) 40%, #4e54c8 100%);
+  background: rgba(102, 82, 73, 0.596);
+  /* background: linear-gradient(0deg, rgb(0 239 255) 40%, #4e54c8 100%); */
   box-shadow: 0 0 20px 20px rgb(0 0 0 / .1);
   
   transition: .25s;
@@ -64,7 +64,7 @@ header {
 h1 {
   margin: 2rem 0 1rem 0; /* Margin is de ruimte om het element heen. Boven beginnen, met de klok mee */
   
-  color: rgb(0 239 255); /* De tekst kleur wordt in rgb() bepaald. */
+  color: rgb(41, 22, 11); /* De tekst kleur wordt in rgb() bepaald. */
 }
 
 /* P */
@@ -72,7 +72,7 @@ h1 {
 /* Om een element met class te selecteren gebruik je een . in de selector */
 p.slogan {
   font-size:1.25em;
-  color:#030711;
+  color:#ffffff84;
 }
 
 /* BUTTON */
@@ -88,7 +88,7 @@ button {
   
   border: none;
   border-radius: 50%; /* De border-radius geeft de <button> ronde hoekjes. */
-  background: rgb(0 239 255);
+  background: rgb(44, 22, 2);
   
   scale:.8;
   
@@ -99,12 +99,12 @@ button {
 /* :hover is een 'Pseudo-class selector', daarmee worden interacties op het element gestyled. */
 button:hover {
   cursor: pointer;
-  background: darkgoldenrod;
+  background: rgb(156, 138, 109);
 }
 /* Met de 'Pseudo-class selector' :focus kan je bepalen hoe het element er uit moet zien als de tab toets op het toetsenbord wordt gebruikt. */
 button:focus {
   outline: none;
-  background: darkgoldenrod;
+  background: rgb(160, 153, 120);
 }
 
 /* In het <button> element staat een <svg> voor het icoon. */
@@ -114,14 +114,14 @@ button svg {
   top: calc(1.25rem - 12px);
   left: calc(1.25rem - 12px);
   
-  stroke: #4e54c8;
+  stroke: #ffffff9d;
   
   transition: .25s;
   transition-delay: .25s; /* Een transitie op het <svg> element begin 0.25 seconde later. */
 }
 /* Met een komma wordt in een keer de styling op de :hover en de :focus van het <svg> element bepaald. */
 button:hover svg, button:focus svg {
-  stroke: lightyellow;
+  stroke: rgb(73, 45, 19);
 }
 /* Met de 'Pseudo-class selector' :nth-of-type() wordt een element geselecteerd op basis van de volgorde. */
 /* Hier wordt het tweede <svg> element in de button geselecteerd. */
@@ -140,7 +140,7 @@ img {
   width: 10em;
   height: auto;
   
-  border: 5px solid #fff;
+  border: 5px solid #1d0a089d;
   border-radius: 10em;
   box-shadow: 0 0 2px 2px rgb(0 0 0 /.2);
   
@@ -217,7 +217,7 @@ article > p {
   margin-top: 0;
   padding: 3rem 2rem;
   
-  background: rgb(255 255 255 / 0.5);
+  background: rgba(73, 46, 26, 0.474);
   border-radius: 0 0 1rem 1rem;
   text-align: center;
 }
