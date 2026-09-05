@@ -7,7 +7,7 @@
 /* Dit verwijst naar het <html> element. De <html> krijgt een lichtgele achtergrond. */
 
 html {
-  background:rgba(50, 32, 16, 0.459);
+  background:rgba(65, 41, 21, 0.459);
 }
 
 /* BODY */
@@ -22,7 +22,7 @@ body {
   height: 100vh;
   
   font-family: open sans;
-  color: #412913bc; /* de tekst kleur wordt in hex kleuren bepaald. */
+  color: #ffffffbc; /* de tekst kleur wordt in hex kleuren bepaald. */
 }
 
 /* ARTICLE */
