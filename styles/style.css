@@ -7,7 +7,8 @@
 /* Dit verwijst naar het <html> element. De <html> krijgt een lichtgele achtergrond. */
 
 html {
-  background:rgba(145, 132, 121, 0.459);
+  background:url("../Horizontaal\ achtergrond.jpeg");
+
 }
 
 /* BODY */
@@ -19,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   
-  height: 100vh;
+  height:100vh;
   
   font-family: 'Times New Roman', Times, serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
   color: #000000bc;* de tekst kleur wordt in hex kleuren bepaald. */
@@ -31,23 +32,23 @@ body {
 /* Er wordt een breedte meegegeven, een minimale en maximale breedte. */
 /* Het <article> element krijgt een kleur, en nog meer ... */
 article {
-  position: relative;
+  position: static;
   
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
   
-  width: 70vw;
+  width: 60vw;
   max-width: 35em;
   min-width: 35em;
   
-  border-radius: 1.5rem;
-  background: rgba(168, 147, 137, 0.596);
+  border-radius: 2rem;
+  background:url("../verticaal.jpeg"); 
   /* background: linear-gradient(0deg, rgb(0 239 255) 40%, #4e54c8 100%); */
   box-shadow: 0 0 30px 30px rgba(255, 255, 255, 0.2);
   
-  transition: .25s;
+  transition: 0,25s;
 }
 
 /* HEADER */
@@ -134,16 +135,16 @@ button svg:nth-of-type(2) {
 /* Hier krijgt het <img> element de styling. */
 img {
   position: relative;
-  top: 2rem;
+  top: 1rem;
   
-  width: 10em;
+  width: 11em;
   height: auto;
   
-  border: 5px solid #1d0a089d;
+  border: 10px solid #d8b9b96a;
   border-radius: 10em;
-  box-shadow: 0 0 2px 2px rgb(0 0 0 /.2);
+  box-shadow: 2 2 2px 2px rgba(147, 136, 136, 0.2);
   
-  transition: 1s .15s; /* Transition Shorthand notation: Transities op het img element duren 1 seconde en beginnen 0.15 seconde later */
+  transition: 3s .15s; /* Transition Shorthand notation: Transities op het img element duren 1 seconde en beginnen 0.15 seconde later */
 }
 
 /* DL, DT, DD  */
@@ -162,18 +163,18 @@ dl {
   align-items: start;
   
   width: 100%;
-  margin-top: -3rem;
+  margin-top: -6rem;
   margin-bottom: 0;
   padding: 5rem 0 3rem;
   
   text-align: center;
-  background: rgb(255 255 255);
+  background: transparent;
 
   dt {
-    margin-top: .25rem;
-    padding-top: .25rem;
+    margin-top: 2rem;
+    padding-top: -5rem;
     
-    border-top: 1px solid rgb(0 0 0 / 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.703);
     font-weight: bold;
     
     &:nth-of-type(1) {
@@ -182,7 +183,7 @@ dl {
     
     &:nth-of-type(2) {
       grid-area: css-dt;
-      translate:0 1rem;
+      translate:0 0rem;
     }
     
     &:nth-of-type(3) {
@@ -192,12 +193,12 @@ dl {
 
   dd {
     margin: 0;
-    padding-left: .3rem;
+    padding-left: 0,3rem;
     
     transition: .25s .3s;
-    
-    &:nth-of-type(2) {
-      translate:0 1rem;
+
+  &:nth-of-type(2) {
+      translate:0 0rem;
     }
   }
 }
@@ -214,10 +215,10 @@ p {
 article > p {
   width: 100%;
   margin-top: 0;
-  padding: 3rem 2rem;
+  padding: 5px;
   
-  background: rgba(73, 46, 26, 0.474);
-  border-radius: 0 0 1rem 1rem;
+  background: transparent;
+  border-radius: 0 0 0rem 0rem;
   text-align: center;
 }
 
